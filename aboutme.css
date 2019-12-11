@@ -1,0 +1,242 @@
+* { box-sizing: border-box; }
+
+header, main, nav, footer {
+    display: inline-block;
+}
+#mobile {
+    display: none;
+}
+#desktop {
+    display: inline;
+}
+
+body {
+    background-color: #CDD3BE;
+    color: #666666;
+    font-family: "Solway", "Times New Roman", serif;
+}
+#wrapper {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #C4DAC9;
+    min-width: 960px;
+    max-width: 2048px;
+    box-shadow: 3px 3px 3px #688582;
+    border: 1px solid #000033;
+}
+.family {
+    transform: rotate(90deg);
+    width: 200px;
+    height: 200px;
+}
+#famsection {
+    text-align: center;
+    padding-right: 300px;
+}
+header {
+    background-color: #688582;
+    color: #FFFFFF;
+    height: 120px;
+    text-align: center;
+    padding-top: 30px;
+    padding-left: 3em;
+   
+}
+main {
+    padding: 1px 20px 20px 20px;
+    display: block; 
+    background-color: #FFFFFF;
+    margin-left: 190px;
+    padding-left: 30px;
+    font-family: "Solway", "Times New Roman", serif;
+    background-color: #C4DAC9;
+    color: white;
+}
+
+nav {
+    font-weight: bold;
+    padding: 20px;
+    margin: 40px;
+    font-size: 120%;
+    float: right;
+    width: 190px;
+}
+nav a {
+    text-decoration: none;
+}
+.profile {
+    width: 300px;
+    height: 300px;
+}
+.code {
+    width: 400px;
+    height: 300px;
+}
+.career {
+    width: 400px;
+    height: 300px
+}
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    font-size: 1.2em;
+}
+nav a:link {
+    color: #688582;
+}
+nav a:visited {
+    color: #62535F;
+}
+
+h2 {
+    color: #688582;
+    font-family: "Solway", "Times New Roman", serif;
+    text-shadow: 1px 1px 1px #CCCCCC;
+    text-align: center;
+}
+h3 {
+    font-family: "Solway", "Times New Roman", serif;
+    color: #000033;
+}
+
+h1 {
+    font-family: "Solway", "Times New Roman", serif;
+    margin-top: 0;
+    font-size: 3em;
+    letter-spacing: 0.25em;
+}
+
+main ul {
+   list-style:circle; 
+   font-size: 1.25em;
+   font-family: "Solway", "Times New Roman", serif;
+   
+    
+}
+footer {
+    font-size: 65%;
+    text-align: center;
+    font-family: "Solway", "Times New Roman", serif;
+    padding: 20px;
+    margin-left: 190px;
+    background-color: #688582;
+    color: white;
+    
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+#gallery { 
+    position: relative;
+    height: 200px; 
+}
+
+#gallery ul {
+    list-style-type: none;
+    width: 300px; 
+}
+#gallery li { 
+     display: inline; 
+     float: left;
+	 padding: 10px; 
+}
+
+#gallery img { 
+    border-style: none;
+}
+#gallery a { 
+    text-decoration: none;  
+    color: #666666; 
+}
+#gallery span { 
+    position: absolute;
+    left: -1000px;
+    opacity: 0;
+    transition:  opacity 3s ease-in-out; 
+}
+#gallery a:hover span {     
+    position: absolute;
+    top: 16px;
+    left: 320px; 
+    opacity: 1; 
+}
+figure {    
+    position: absolute;
+    left: 280px; 
+    opacity: .25;
+}
+
+@media only screen and (max-width: 64em){
+    body  {
+        margin: 0;
+        background-color: #FFFFFF;
+    }
+    #wrapper {
+        min-width: 0;
+        width: auto;
+        box-shadow: none;
+        border: none;
+    }
+    header {
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        padding-left: 0;
+        height: auto;
+    }
+    h1 {
+        letter-spacing: 0.1em;
+    }
+    main {
+        margin-left: 0;
+    }
+    nav {
+        float: none;
+        width: auto;
+        text-align: center;
+        padding: 0.5em;
+    }
+    nav li {
+        display: inline;
+        padding: 0.25em 0.75em;
+    }
+   
+    footer {
+        margin-left: 0;
+    }
+    
+}
+@media only screen and (max-width: 37.5em){
+    main {
+        padding: 0.1em 1em;
+        font-size: 90%;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    nav {
+        padding: 0;
+    }
+    nav li {
+        display: block;
+        margin: 0;
+        border-bottom: 2px solid #330000;
+    }
+    nav a {
+        display: block;
+    }
+    img {
+        display: none;
+    }
+    #mobile {
+        display: inline;
+    }
+    #desktop {
+        display: none;
+    }
+    
+}
